@@ -1,0 +1,107 @@
+# Macedonian translations for ckanext-odata.
+# Copyright (C) 2018 ORGANIZATION
+# This file is distributed under the same license as the ckanext-odata
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-odata 0.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-05-31 08:04+0200\n"
+"PO-Revision-Date: 2018-05-31 08:04+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: mk\n"
+"Language-Team: mk <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ckanext/odata/actions.py:125
+msgid "DataStore resource not found"
+msgstr ""
+
+#: ckanext/odata/actions.py:127
+msgid "DataStore resource not authourized"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:18
+msgid "CKAN Data API"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:22
+msgid "Access resource data via a web API with powerful query support"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:23
+msgid ""
+" Further information in the<a       "
+"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
+"target=\"_blank\">main CKAN Data API and DataStore documentation</a>.</p>"
+" "
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:32
+msgid "Endpoints"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:36
+msgid ""
+"The Data API can be accessed via the following actions of the CKAN action"
+" API."
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:41
+msgid "Create"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:45
+msgid "Update / Insert"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:49
+msgid "Query"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:53
+msgid "Query (via SQL)"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:75
+msgid "Querying"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:79
+msgid "Query example (first 5 results)"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:84
+msgid "Query example (results containing 'jones')"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:90
+msgid "Query example (via SQL statement)"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:96
+msgid "OData example (first 5 results, skip 1)"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:101
+msgid "OData example (first 5 results, return as OData JSON)"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:112
+msgid "Example: Javascript"
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:116
+msgid "A simple ajax (JSONP) request to the data API using jQuery."
+msgstr ""
+
+#: ckanext/odata/templates/ajax_snippets/api_info.html:137
+msgid "Example: Python"
+msgstr ""
+

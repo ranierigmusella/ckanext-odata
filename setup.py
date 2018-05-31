@@ -26,4 +26,11 @@ setup(
         # Add plugins here, e.g.
         odata=ckanext.odata.plugin:ODataPlugin
     ''',
+    message_extractors={
+        'ckanext': [
+            ('**.py', 'python', None),
+            ('**.js', 'javascript', None),
+            ('**/templates/**.html', 'ckan', None),
+        ],
+    }
 )

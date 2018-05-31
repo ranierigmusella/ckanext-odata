@@ -1,18 +1,20 @@
 import ckan.plugins as p
 
 import ckanext.odata.actions as action
+from ckan.lib.plugins import DefaultTranslation
 
 
 def link(resource_id):
     return '%s%s' % (action.base_url(), resource_id)
 
 
-class ODataPlugin(p.SingletonPlugin):
+class ODataPlugin(p.SingletonPlugin, DefaultTranslation):
 
     p.implements(p.IConfigurer)
     p.implements(p.IRoutes, inherit=True)
     p.implements(p.IActions)
     p.implements(p.ITemplateHelpers, inherit=True)
+    p.implements(p.ITranslation)
 
     def update_config(self, config):
         p.toolkit.add_template_directory(config, 'templates')
