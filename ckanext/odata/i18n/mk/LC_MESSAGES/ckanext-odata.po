@@ -9,99 +9,106 @@ msgstr ""
 "Project-Id-Version: ckanext-odata 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-05-31 08:04+0200\n"
-"PO-Revision-Date: 2018-05-31 08:04+0200\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-06-09 00:37+0200\n"
 "Language: mk\n"
 "Language-Team: mk <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.0.8\n"
 
 #: ckanext/odata/actions.py:125
 msgid "DataStore resource not found"
-msgstr ""
+msgstr "Ресурсот од податочното складиште не е пронајден"
 
 #: ckanext/odata/actions.py:127
 msgid "DataStore resource not authourized"
-msgstr ""
+msgstr "Ресурсот од податочното складиште не е овластен"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:18
 msgid "CKAN Data API"
-msgstr ""
+msgstr "CKAN API за податоци"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:22
 msgid "Access resource data via a web API with powerful query support"
 msgstr ""
+"Пристапете до податоците во ресурс преку веб API со моќна поддршка за "
+"пребарување"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:23
 msgid ""
-" Further information in the<a       "
-"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
-"target=\"_blank\">main CKAN Data API and DataStore documentation</a>.</p>"
-" "
+" Further information in the<a       href=\"http://docs.ckan.org/en/"
+"latest/maintaining/datastore.html\" target=\"_blank\">main CKAN Data API "
+"and DataStore documentation</a>.</p> "
 msgstr ""
+" Дополнителни информации во <a       href=\"http://docs.ckan.org/en/"
+"latest/maintaining/datastore.html\" target=\"_blank\">главната "
+"документација на CKAN API за податоци и податочното складиште</a>.</p> "
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:32
 msgid "Endpoints"
-msgstr ""
+msgstr "Крајни точки"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:36
 msgid ""
-"The Data API can be accessed via the following actions of the CKAN action"
-" API."
+"The Data API can be accessed via the following actions of the CKAN "
+"action API."
 msgstr ""
+"До API-то за податоци може да се пристапи преку следните акции на CKAN "
+"API-то за акции."
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:41
 msgid "Create"
-msgstr ""
+msgstr "Креирајте"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:45
 msgid "Update / Insert"
-msgstr ""
+msgstr "Ажурирајте / Внесете"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:49
 msgid "Query"
-msgstr ""
+msgstr "Квери"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:53
 msgid "Query (via SQL)"
-msgstr ""
+msgstr "Квери (преку SQL)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:75
 msgid "Querying"
-msgstr ""
+msgstr "Кверирање"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:79
 msgid "Query example (first 5 results)"
-msgstr ""
+msgstr "Пример за квери (првите 5 резултати)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:84
 msgid "Query example (results containing 'jones')"
-msgstr ""
+msgstr "Пример за квери (резултати кои содржат 'јован')"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:90
 msgid "Query example (via SQL statement)"
-msgstr ""
+msgstr "Пример за квери (преку SQL израз)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:96
 msgid "OData example (first 5 results, skip 1)"
-msgstr ""
+msgstr "OData пример (први 5 резултати, прескокни 1)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:101
 msgid "OData example (first 5 results, return as OData JSON)"
-msgstr ""
+msgstr "OData пример (први 5 резултати, врати како OData JSON)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:112
 msgid "Example: Javascript"
-msgstr ""
+msgstr "Пример: Javascript"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:116
 msgid "A simple ajax (JSONP) request to the data API using jQuery."
 msgstr ""
+"Едноставно AJAX (JSONP) барање до API-то за податоци користејќи jQuery."
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:137
 msgid "Example: Python"
-msgstr ""
-
+msgstr "Пример: Python"
