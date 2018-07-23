@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-odata 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-05-31 08:04+0200\n"
+"POT-Creation-Date: 2018-07-23 12:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,78 +25,78 @@ msgstr ""
 msgid "DataStore resource not authourized"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:18
+#: ckanext/odata/templates/ajax_snippets/api_info.html:20
 msgid "CKAN Data API"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:22
+#: ckanext/odata/templates/ajax_snippets/api_info.html:24
 msgid "Access resource data via a web API with powerful query support"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:23
+#: ckanext/odata/templates/ajax_snippets/api_info.html:25
 msgid ""
-" Further information in the<a       "
+" Further information in the <a             "
 "href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
 "target=\"_blank\">main CKAN Data API and DataStore documentation</a>.</p> "
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:32
+#: ckanext/odata/templates/ajax_snippets/api_info.html:34
 msgid "Endpoints"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:36
+#: ckanext/odata/templates/ajax_snippets/api_info.html:38
 msgid "The Data API can be accessed via the following actions of the CKAN action API."
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:41
+#: ckanext/odata/templates/ajax_snippets/api_info.html:43
 msgid "Create"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:45
+#: ckanext/odata/templates/ajax_snippets/api_info.html:47
 msgid "Update / Insert"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:49
+#: ckanext/odata/templates/ajax_snippets/api_info.html:51
 msgid "Query"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:53
+#: ckanext/odata/templates/ajax_snippets/api_info.html:55
 msgid "Query (via SQL)"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:75
+#: ckanext/odata/templates/ajax_snippets/api_info.html:71
 msgid "Querying"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:79
+#: ckanext/odata/templates/ajax_snippets/api_info.html:75
 msgid "Query example (first 5 results)"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:84
+#: ckanext/odata/templates/ajax_snippets/api_info.html:80
 msgid "Query example (results containing 'jones')"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:90
+#: ckanext/odata/templates/ajax_snippets/api_info.html:85
 msgid "Query example (via SQL statement)"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:96
+#: ckanext/odata/templates/ajax_snippets/api_info.html:89
 msgid "OData example (first 5 results, skip 1)"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:101
+#: ckanext/odata/templates/ajax_snippets/api_info.html:94
 msgid "OData example (first 5 results, return as OData JSON)"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:112
+#: ckanext/odata/templates/ajax_snippets/api_info.html:105
 msgid "Example: Javascript"
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:116
+#: ckanext/odata/templates/ajax_snippets/api_info.html:109
 msgid "A simple ajax (JSONP) request to the data API using jQuery."
 msgstr ""
 
-#: ckanext/odata/templates/ajax_snippets/api_info.html:137
+#: ckanext/odata/templates/ajax_snippets/api_info.html:130
 msgid "Example: Python"
 msgstr ""
 
