@@ -9,23 +9,24 @@ msgstr ""
 "Project-Id-Version: ckanext-odata 0.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-07-23 12:51+0200\n"
-"PO-Revision-Date: 2018-07-05 00:14+0200\n"
+"PO-Revision-Date: 2018-08-07 23:54+0200\n"
 "Last-Translator: \n"
 "Language: sq\n"
 "Language-Team: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: ckanext/odata/actions.py:125
 msgid "DataStore resource not found"
-msgstr "Burimi i depove të të dhënave nuk u gjet"
+msgstr "Burimi i setit të të dhënave nuk u gjet"
 
 #: ckanext/odata/actions.py:127
 msgid "DataStore resource not authourized"
-msgstr "Burimi i depove të të dhënave nuk është i autorizuar"
+msgstr "Burimi i setit të të dhënave nuk është i autorizuar"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:20
 msgid "CKAN Data API"
@@ -38,26 +39,23 @@ msgstr ""
 "fuqishme të kërkesës"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:25
-#, fuzzy
 msgid ""
-" Further information in the <a             "
-"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
-"target=\"_blank\">main CKAN Data API and DataStore documentation</a>.</p>"
-" "
+" Further information in the <a             href=\"http://docs.ckan.org/"
+"en/latest/maintaining/datastore.html\" target=\"_blank\">main CKAN Data "
+"API and DataStore documentation</a>.</p> "
 msgstr ""
-"Informata shtesë në<a       "
-"href=\"http://docs.ckan.org/en/latest/maintaining/datastore.html\" "
-"target=\"_blank\">API kryesor të të dhënave të CKAN dhe dokumentimi i "
-"depos të të dhënave</a>.</p> "
+"Informacione shtesë në<a       href=\"http://docs.ckan.org/en/latest/"
+"maintaining/datastore.html\" target=\"_blank\">API kryesor të të dhënave "
+"të CKAN dhe dokumentimi i depos të të dhënave</a>.</p> "
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:34
 msgid "Endpoints"
-msgstr "Pika të fundit"
+msgstr "Pika në fund"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:38
 msgid ""
-"The Data API can be accessed via the following actions of the CKAN action"
-" API."
+"The Data API can be accessed via the following actions of the CKAN "
+"action API."
 msgstr ""
 "API i të dhënave mund të qaset përmes veprimeve në vijim të API-s të "
 "veprimit të CKAN-it"
@@ -72,45 +70,46 @@ msgstr "Përditso / shto"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:51
 msgid "Query"
-msgstr "Kërkesa"
+msgstr "Pyetje"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:55
 msgid "Query (via SQL)"
-msgstr "Kërkesa(përmes SQL)"
+msgstr "Pyetje (përmes SQL)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:71
 msgid "Querying"
-msgstr "Kërkimi"
+msgstr "Pyetjet"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:75
 msgid "Query example (first 5 results)"
-msgstr "Shembull i kërkesës (5 rezultatet e para)"
+msgstr "Shembull i pyetjes (5 rezultatet e para)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:80
 msgid "Query example (results containing 'jones')"
-msgstr "Shembull i kërkesës (rezultatet që përmbajnë 'jones'"
+msgstr "Shembull i pyetjes (rezultatet që përmbajnë 'jones'"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:85
 msgid "Query example (via SQL statement)"
-msgstr "Shembull i kërkesës (përmes SQL shprehjës)"
+msgstr "Shembull i pyetjes (përmes SQL shprehjës)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:89
 msgid "OData example (first 5 results, skip 1)"
-msgstr "Shembulli i OData (5 rezultatet e para, kalo 1)"
+msgstr "Shembulli OData (5 rezultatet e para, kalo 1)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:94
 msgid "OData example (first 5 results, return as OData JSON)"
-msgstr "Shembulli i OData (5 rezultatet e para, kthehu si OData JSON)"
+msgstr "Shembulli OData (5 rezultatet e para, kthehu si OData JSON)"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:105
 msgid "Example: Javascript"
-msgstr "Shembull: Javascript"
+msgstr "Shembulli: Javascript"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:109
 msgid "A simple ajax (JSONP) request to the data API using jQuery."
-msgstr "Një AJAX kërkesë (JSONP) në API e të dhënave duke përdorur jQuery"
+msgstr ""
+"Një kërkesë e thjeshtë ajax (JSON)\\ tek API-ja e të dhënave duke "
+"përdorur jQuery"
 
 #: ckanext/odata/templates/ajax_snippets/api_info.html:130
 msgid "Example: Python"
 msgstr "Shembull: Python"
-
