@@ -9,6 +9,7 @@ Example
     {% snippet 'ajax_snippets/api_info.html', resource_id=resource_id, embedded=true %}
 
 #}
+
 {% set resource_id = h.sanitize_id(resource_id) %}
 {% set sql_example_url = h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search_sql', qualified=True) + '?sql=SELECT * from "' + resource_id + '" WHERE title LIKE \'jones\'' %}
 {# not urlencoding the sql because its clearer #}
@@ -55,10 +56,10 @@ Example
                       <th scope="row">{{ _('Query (via SQL)') }}</th>
                       <td><code>{{ h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search_sql', qualified=True) }}</code></td>
                     </tr>
-		    <tr>
-		        <th scope="row"><a href="http://www.odata.org" target="_blank"><img src="http://www.odata.org/assets/ODataLogo-24.png"></a>OData</th>
-		        <td><code><a href="{{ h.ckanext_odata_link(resource_id) }}" target="_blank">{{ h.ckanext_odata_link(resource_id) }}</a></code></td>
-		      </tr>
+                    <tr>
+                      <th scope="row"><a href="http://www.odata.org" target="_blank"><img src="http://www.odata.org/assets/ODataLogo-24.png"></a>OData</th>
+                      <td><code><a href="{{ h.ckanext_odata_link(resource_id) }}" target="_blank">{{ h.ckanext_odata_link(resource_id) }}</a></code></td>
+                    </tr>
 
                   </tbody>
                 </table>
@@ -74,27 +75,28 @@ Example
               <div class="panel-body">
                 <strong>{{ _('Query example (first 5 results)') }}</strong>
                 <p>
-                <code>{{ h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search', resource_id=resource_id, limit=5, qualified=True) }}</code>
+                <code><a href="{{ h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search', resource_id=resource_id, limit=5, qualified=True) }}" target="_blank" rel="nofollow">{{ h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search', resource_id=resource_id, limit=5, qualified=True) }}</a></code>
                 </p>
 
                 <strong>{{ _('Query example (results containing \'jones\')') }}</strong>
                 <p>
-                <code>{{ h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search', resource_id=resource_id, q='jones', qualified=True) }}</code>
+                <code><a href="{{ h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search', resource_id=resource_id, q='jones', qualified=True) }}" target="_blank" rel="nofollow">{{ h.url_for(controller='api', action='action', ver=3, logic_function='datastore_search', resource_id=resource_id, q='jones', qualified=True) }}</a></code>
                 </p>
 
                 <strong>{{ _('Query example (via SQL statement)') }}</strong>
                 <p>
-                <code>{{sql_example_url}}</code>
+                <code><a href="{{sql_example_url}}" target="_blank" rel="nofollow">{{ sql_example_url }}</a></code>
                 </p>
-               <strong>{{ _('OData example (first 5 results, skip 1)') }}</strong>
-              <p>
-              <code><a href="{{ h.ckanext_odata_link(resource_id) }}?$top=5&$skip=1" target="_blank">{{ h.ckanext_odata_link(resource_id) }}?$top=5&$skip=1</a></code>
-              </p>
 
-              <strong>{{ _('OData example (first 5 results, return as OData JSON)') }}</strong>
-              <p>
-              <code><a href="{{ h.ckanext_odata_link(resource_id) }}?$top=5&$format=json" target="_blank">{{ h.ckanext_odata_link(resource_id) }}?$top=5&$format=json</a></code>
-              </p>
+                <strong>{{ _('OData example (first 5 results, skip 1)') }}</strong>
+-              <p>
+-              <code><a href="{{ h.ckanext_odata_link(resource_id) }}?top=5&skip=1" target="_blank" rel="nofollow">{{ h.ckanext_odata_link(resource_id) }}?top=5&skip=1</a></code>
+-              </p>
+
+-              <strong>{{ _('OData example (first 5 results, return as OData JSON)') }}</strong>
+-              <p>
+-              <code><a href="{{ h.ckanext_odata_link(resource_id) }}?top=5&format=json" target="_blank" rel="nofollow">{{ h.ckanext_odata_link(resource_id) }}?top=5&format=json</a></code>
+-              </p>
 
               </div>
             </div>

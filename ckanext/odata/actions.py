@@ -1,6 +1,8 @@
 import re
 import simplejson as json
 
+from flask import make_response
+
 import ckan.plugins as p
 
 
@@ -42,14 +44,14 @@ def name_2_xml_tag(name):
     '''
 
     # leave well-formed XML element characters only
-    name = re.sub(ur'[^:A-Z_a-z\u00C0-\u00D6\u0370-\u037D\u037F-\u1FFF'
-                  ur'\u200C-\u200D\u2070-\u218F\u2C00-\u2FEF\u3001-\uD7FF'
-                  ur'\uF900-\uFDCF\uFDF0-\uFFFD-.0-9\u00B7\u0300-\u036F'
-                  ur'\u203F-\u2040]', '', name)
+    name = re.sub(u'[^:A-Z_a-z\\u00C0-\\u00D6\\u0370-\\u037D\\u037F-\\u1FFF'
+                  u'\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF'
+                  u'\\uF900-\\uFDCF\\uFDF0-\\uFFFD-.0-9\\u00B7\\u0300-\\u036F'
+                  u'\\u203F-\\u2040]', '', name)
 
     # add '_' in front of non-NameStart characters
-    name = re.sub(ur'(?P<q>^[-.0-9\u00B7#\u0300-\u036F\u203F-\u2040])',
-                  '_\g<q>', name, flags=re.M)
+    name = re.sub(u'(?P<q>^[-.0-9\\u00B7#\\u0300-\\u036F\\u203F-\\u2040])',
+                  u'_\\g<q>', name, flags=re.M)
 
     # No valid XML element at all
     if name == '':
@@ -60,7 +62,7 @@ def name_2_xml_tag(name):
 
 def get_qs_int(param, default):
     ''' Get a query sting param as an int '''
-    value = t.request.GET.get(param, default)
+    value = t.request.args.get(param, default)
     try:
         value = int(value)
     except ValueError:
@@ -90,16 +92,16 @@ def odata(context, data_dict):
         resource_id = uri
         filters = {}
     
-    output_json = t.request.GET.get('$format') == 'json'
-    
+    output_json = t.request.args.get('format') == 'json'
+
     # Ignore $limit & $top paramters if $sqlfilter is specified
     # as they should be specified by the sql query
-    if t.request.GET.get('$sqlfilter'):
+    if t.request.args.get('sqlfilter'):
         action = t.get_action('datastore_search_sql')
         
         # Replace double quotes with single quotes to avoid syntax errors.
         # Not sure if this will cause us any trouble later.
-        query = t.request.GET.get('$sqlfilter').replace('"','\'')
+        query = t.request.args.get('sqlfilter').replace('"','\'')
         sql = "SELECT * FROM \"%s\" %s"%(resource_id,query)
         
         data_dict = {
@@ -108,8 +110,8 @@ def odata(context, data_dict):
     else:
         action = t.get_action('datastore_search')
         
-        limit = get_qs_int('$top', 500)
-        offset = get_qs_int('$skip', 0)
+        limit = get_qs_int('top', 500)
+        offset = get_qs_int('skip', 0)
 
         data_dict = {
             'resource_id': resource_id,
@@ -117,17 +119,15 @@ def odata(context, data_dict):
             'limit': limit,
             'offset': offset
         }
-        
 
     try:
         result = action({}, data_dict)
     except t.ObjectNotFound:
         t.abort(404, t._('DataStore resource not found'))
     except t.NotAuthorized:
-        t.abort(401, t._('DataStore resource not authourized'))
-    
-    
-    if not t.request.GET.get('$sqlfilter'):
+        t.abort(401, t._('DataStore resource not authorized'))
+
+    if not t.request.args.get('sqlfilter'):
         num_results = result['total']
         if num_results > offset + limit:
             next_query_string = '$skip=%s&$top=%s' % (offset + limit, limit)
@@ -163,5 +163,7 @@ def odata(context, data_dict):
             'entries': result['records'],
             'next_query_string': next_query_string,
         }
-        t.response.headers['Content-Type'] = 'application/atom+xml;type=feed;charset=utf-8'
-        return t.render('ckanext-odata/collection.xml', data)
+
+        resp = make_response(t.render('ckanext-odata/collection.xml', data))
+        resp.headers['Content-Type'] = 'application/atom+xml;type=feed;charset=utf-8'
+        return resp
